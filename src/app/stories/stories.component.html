@@ -1,7 +1,9 @@
+<div class="loading-section" *ngIf="!items"></div>
+  Loading Stories...
 <div class="main-content">
   <ol>
-    <li *ngFor="let item of items | slice:0:30" class="post">
-      <item class="item-block" itemID="{{ item }}"></item>
+    <li *ngFor="let item of items" class="post">
+      <item class="item-block" [item]="item"></item>
     </li>
   </ol>
   <div class="nav">

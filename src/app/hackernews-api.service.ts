@@ -11,8 +11,8 @@ export class HackerNewsAPIService {
     this.baseUrl = 'https://hacker-news.firebaseio.com/v0';
   }
 
-  fetchStories(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/topstories.json`)
+  fetchStories(storyType: string, page: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${storyType}?page=${page}`)
                     .map(response => response.json());
   }
 
