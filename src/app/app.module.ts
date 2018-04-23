@@ -9,6 +9,9 @@ import { HeaderComponent } from './header/header.component';
 import { StoriesComponent } from './stories/stories.component';
 import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
+import { ItemCommentsComponent } from './item-comments/item-comments.component';
+
+import { routing } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -17,11 +20,13 @@ import { ItemComponent } from './item/item.component';
     StoriesComponent,
     FooterComponent,
     ItemComponent,
+    ItemCommentsComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     HttpModule,
+    routing
   ],
   providers: [
     HackerNewsAPIService,
