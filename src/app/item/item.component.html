@@ -11,7 +11,7 @@
       <a href="">{{item.user}}</a>
     </span>
     <span>
-      {{ (item.time_ago }}
+      {{ item.time_ago }}
       <span> |
         <a href="">
           <span *ngIf="item.comments_count !== 0">
@@ -38,7 +38,7 @@
       <span class="right">{{item.score}} ★</span>
     </div>
     <div class="details">
-    {{ (item.time_ago) }}
+    {{ item.time_ago }}
     <a href="" class="comment-number"> •
       <span *ngIf="item.comments_count !== 0">
         {{item.comments_count}}

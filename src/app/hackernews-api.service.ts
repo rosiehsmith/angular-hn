@@ -8,7 +8,7 @@ export class HackerNewsAPIService {
   baseUrl: string;
 
   constructor(private http: Http) {
-    this.baseUrl = 'https://hacker-news.firebaseio.com/v0';
+    this.baseUrl = 'https://node-hnapi.herokuapp.com';
   }
 
   fetchStories(storyType: string, page: number): Observable<any> {
