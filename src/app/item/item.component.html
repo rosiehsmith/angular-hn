@@ -8,7 +8,7 @@
   <div class="subtext-laptop">
     <span>
       {{item.points}} points by
-      <a href="">{{item.user}}</a>
+      <a [routerLink]="['/user', item.user]" href="">{{item.user}}</a>
     </span>
     <span>
       {{ item.time_ago }}
@@ -34,7 +34,7 @@
   </p>
   <div class="subtext-palm">
     <div class="details">
-      <span class="name"> <a href="">{{item.user}}</a></span>
+      <span class="name"> <a [routerLink]="['/user', item.user]" href="">{{item.user}}</a></span>
       <span class="right">{{item.score}} ★</span>
     </div>
     <div class="details">
